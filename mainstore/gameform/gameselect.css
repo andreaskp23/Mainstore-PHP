@@ -1,0 +1,134 @@
+.body{
+  background-color: rgb(115, 0, 255);
+}
+
+.genre-layout{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.genre-btn {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.genre-btn:focus,
+.genre-btn:hover {
+  color: #fff;
+}
+
+.genre-btn:focus:after,
+.genre-btn:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.genre-btn:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.card {
+    width: 220px;
+    padding: 10px;
+    background-image: linear-gradient(to right bottom, #5d0391, #7b05ae, #9b05cb, #bd00e7, #bd00e7);
+    background-size: 200% 200%;
+    border-radius: 12px;
+    margin: 20px;
+  }
+
+  .game-layout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+  }
+  
+  .card-int {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: white;
+  }
+  
+  .img {
+    width: 100%;
+    height: 175px;
+    background-color: pink;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .card-data {
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  .card__span {
+    font-family: 'Lucida Sans' sans-serif;
+    font-size: 11px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  
+  .button {
+    width: 100%;
+    margin-top: 15px;
+    background-image: linear-gradient(to right bottom, #5d0391, #7b05ae, #9b05cb, #bd00e7, #bd00e7);
+    background-size: 200% 200%;
+    border: none;
+    padding: 8px 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.1s ease-in;
+  }
+  
+  .button:active {
+    transform: translateY(3px);
+  }
+  
+  .card:hover, button:hover {
+    animation: gradient 0.8s ease-in 1;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 200% 200%;
+    }
+  
+    100% {
+      background-position: 400% 400%;
+    }
+  }
+  

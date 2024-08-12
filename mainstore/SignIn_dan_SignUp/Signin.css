@@ -1,0 +1,105 @@
+* {
+ overflow-y: hidden;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: 'Arial', sans-serif;
+    background-image: url(../img/cyberpunk-2928.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+
+}
+
+.txt{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.container {
+    border-radius: 16px;
+    width: 300px;
+    padding: 3px 20px 20px 20px; 
+    color: white;
+    background: rgba(0,0,0,0.15);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(0,0,0,0.075);
+   height: 480px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+
+label {
+    margin-bottom: 8px;
+    text-align: start;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 0px;
+   color: white;
+    background: rgba(0,0,0,0.05);
+-webkit-backdrop-filter: blur(5px);
+backdrop-filter: blur(5px);
+border: 1px solid rgba(0,0,0,0.025);
+}
+
+  .button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+  }
+  
+.button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+.button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+.button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+.button:hover span {
+    transform: translateX(7px);
+  }
+
+  #signIn{
+    width: 230px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+#signUp{
+  width: 230px;
+  margin: 30px;
+}

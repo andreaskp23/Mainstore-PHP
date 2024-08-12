@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.an{
+    text-decoration: none;
+  }
+.nav-item{
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 2px solid transparent;
+}
+.nav-item:hover{
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    transition: border 0.3s ease-in;
+}
+.navTop{
+    height: 70px;
+    z-index: 150;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+body{
+    overflow-x: hidden;
+    background: linear-gradient(to right, #B947FF, #4C007B);
+}
+
+
+/*Parallax*/
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parallax .parallax-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.parallax .parallax-text{
+    position: absolute;
+    top: 250px;
+    text-align: center;
+    pointer-events: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+}
+
+/*Sec 2*/
+.sec2{
+    position: relative;
+    padding-top: 120px;
+    z-index: 30;
+    background: linear-gradient(to right, #B947FF, #4C007B);
+}
+
+.title-sec2{
+    font-weight: 700;
+    text-align: center;
+    font-size: 5vh;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-title{
+    color: white;
+    margin-top: 12%;
+    text-align: center;
+}
+.menu-desc{
+    color: white;
+    font-size: 3vh;
+    margin-top: 6%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.menu1{
+    width: 50%;
+    background-image: url("img/slime-ice.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.menu2{
+    width: 50%;
+    background-image: url("img/rdr-red.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-all{
+    padding-top: 7%;
+    padding-bottom: 10%;
+    min-width: 225px;
+    transition: border 0.5s ease;
+}
+.menu-all:hover{
+    background-position: center;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+/*Sec 3*/
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    padding-top: 100px;
+    background: linear-gradient(to right, #B947FF, #4C007B);
+    z-index: 20;
+}
+
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 10%;
+    margin-left: 5%;
+}
+
+.logo{
+    min-width: 225px;
+    width: 25%;
+}
+
+.about-right{
+    width: 60%;
+    min-width: 225px;
+    padding-left: 15px;
+    margin-left: 25px;
+    border-left: 2px solid white;
+}
+.about-title{
+    color: white;
+    margin-top: 3%;
+}
+.about-desc{
+    color: white;
+    font-size: 3vh;
+    margin-top: 40px;
+}
+
+
+/*Section 3*/
+.reason{
+    position: relative;
+    padding-top: 70px;
+    padding: 20px;
+    background: linear-gradient(to right, #B947FF, #4C007B);
+    z-index: 20;
+}
+.andrius{
+    width: 20%;
+}
+
+.ruin{
+    width: 15%;
+}
+
+.slime{
+    width: 10%;
+    margin-left: 10%;
+    margin-right: 20px;
+}
+
+.right{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.alasan{
+    color: white;
+}
+
+/*Sec 4*/
+.join-us{
+    position: relative;
+    background: linear-gradient(to right, #B947FF, #4C007B);
+    padding-top: 200px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+    z-index: 20;
+}
+
+.signButton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-menu{
+    width: 200px;
+    height: 300px;
+}
+
+#signInMenu, #signUpMenu, #gameMenu, #topUpMenu{
+    display: none;
+    position: fixed; 
+    top: 0px; 
+    right: 0px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 150px;
+}
+#signInMenu{
+    z-index: 96;
+}
+#signUpMenu{
+    z-index: 97;
+}
+#gameMenu{
+    z-index: 98;
+}
+#topUpMenu{
+    z-index: 99;
+}
+
+/*Button*/
+#signIn, #signUp{
+    width: 230px;
+    margin: 30px;
+}
+.button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    text-decoration: none;
+  }
+  
+.button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+.button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+.button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+.button:hover span {
+    transform: translateX(7px);
+  }
+
+
+  @media screen and (max-width: 550px){
+    .about-right{
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 0px;
+        border-left: 0px;
+        text-align: center;
+    }
+    .menu1, .menu2{
+        width: 100%;
+    }
+    .con{
+        justify-content: center;
+    }
+
+  }
+
+
+  .footer{
+    height: 150px;
+    background-color: #0f0c29;
+    margin-top: 50px;
+    color: white;
+    padding-top: 40px;
+    font-size: medium;
+  }
+
+  .footer-text{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-foot, .right-foot{
+    width: 40%;
+    text-align: center;
+  }
+  
+
+  .button-sign {
+    position: relative;
+    background-color: rgb(230, 34, 77);
+    border-radius: 5px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    padding: 5px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 154px;
+    height: 49px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .button-sign::before {
+    content: "";
+    background-color: rgb(248, 50, 93);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  .button-sign:hover::before {
+    width: 100%;
+  }
+  
